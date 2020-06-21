@@ -7,7 +7,7 @@ const UserSchema = new Schema(
     email: String,
     password: String,
   },
-  { collection: "User" }
+  { collection: "user" }
 );
 
 module.exports = mongoose.model("User", UserSchema);

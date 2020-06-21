@@ -11,10 +11,6 @@ mongoose.connection.once("open", () => {
   console.log("conneted to database");
 });
 
-mongoose.connection.on("error", (err) => {
-  console.log("Database error: " + err);
-});
-
 app.use(
   "/graphql",
   graphqlHTTP({

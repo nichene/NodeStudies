@@ -5,7 +5,7 @@ const app = express();
 
 import mongoose from "mongoose";
 
-mongoose.connect("mongodb://SmUser:SmPass@localhost:27017/SmartFit");
+mongoose.connect("mongodb://localhost:27017/SmartFit");
 
 mongoose.connection.once("open", () => {
   console.log("conneted to database");

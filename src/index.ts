@@ -1,6 +1,6 @@
 import express from "express";
 import graphqlHTTP from "express-graphql";
-const schema = require("./schema/schema");
+const schema = require("./graphqlSchema/schemas");
 const app = express();
 
 import mongoose from "mongoose";
